@@ -1,4 +1,4 @@
-# Lucky Draw
+# Lucky Draw App using AngularJS
 This project is a part of my AngularJS learning curve. I make it for fun. Don't forget to try it if you need to challenge your lucky.
 ## How it work ?
 It should be run without requirement on all PC / Laptop / SmartPhone. Only open it on your WebBrowser.
