@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="common.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    </head>
+<body ng-app="appLuckyDraw" ng-controller="contLuckyDraw">
+
+<h2>Lucky Draw</h2>
+<div>Lucky Ticket: {{ticket}}</div>
+<div class="result">
+    <div ng-repeat="item in results" class="reward">{{item.result}}</div>
+</div>
+<div style="clear:both"><br /></div>
+
+<table class="rarity">
+    <tr><th>Rarity</th><th>Rate</th></tr>
+    <tr ng-repeat="x in rewardList">
+        <td class="rarity-title">{{x.title}}</td><td class="rarity-rate">{{+x.rate+'%'}}</td>
+    </tr>
+</table>
+
+<p>
+    <button ng-disabled="{{disableDraw}}" ng-click="draw()">Draw</button>
+    <button ng-disabled="{{disableDraw}}" ng-click="draw10()">Draw x 10</button>
+    <button ng-click="reset()">Reset</button>
+</p>
+
+<script type="text/javascript" src="contLuckyDraw.js"></script>
+
+</body>
+</html>

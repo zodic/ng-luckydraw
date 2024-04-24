@@ -1,0 +1,70 @@
+body{
+    background-color: #333;
+    color:#FFF;
+}
+
+div.result{
+    width: 450pt;
+}
+
+div.reward{
+    text-align: center;
+    width: 50pt;
+    border-radius: 5px;
+    border: solid #FFF 1pt;
+    padding: 10pt;
+    margin: 5pt;
+    float:left;
+}
+
+table.rarity{
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 350px;
+    color: #333;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+table.rarity tr:nth-child(odd){
+    background-color: #BBB;
+}
+table.rarity tr:nth-child(even){
+    background-color: #DDD;
+}
+table.rarity th{
+    padding: 5pt 10pt 5pt 10pt;
+    color:#FFF;
+    background-color: royalblue;
+}
+table.rarity td{
+    padding: 5pt 10pt 5pt 10pt;
+}
+table.rarity td.rarity-title{
+    text-align: center; 
+}
+table.rarity td.rarity-rate{
+    text-align: right; 
+}
+button{
+    border-radius: 5px;
+    border: 0;
+    padding: 10pt;
+    color:#FFF;
+    background-color: royalblue;
+    cursor: pointer;
+}
